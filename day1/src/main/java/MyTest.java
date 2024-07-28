@@ -19,4 +19,19 @@ public class MyTest {
 
         session.close();
     }
+
+    @Test
+    public void test2() {
+        SqlSession session = MybatisUtils.getSqlSession();
+
+        UserMapper mapper = session.getMapper(UserMapper.class);
+
+        User form = new User("selfknow","123");
+        User user = mapper.selectByUser(form);
+//        User user = mapper.selectByUP("selfknow", "123");
+//        User user = mapper.selectByUsername("selfknow");
+
+        System.out.println(user);
+        System.out.println(user == form);
+    }
 }

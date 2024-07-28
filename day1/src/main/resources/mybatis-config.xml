@@ -16,6 +16,8 @@
     </environments>
 
     <mappers>
-        <mapper resource="UserMapper.xml"/>
+        <mapper resource="com/selfknow/dao/UserMapper.xml"/>
+<!--        <mapper class="com.selfknow.dao.UserMapper"/>-->
+<!--        <package name="com.selfknow.dao"/>-->
     </mappers>
 </configuration>

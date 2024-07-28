@@ -1,5 +1,7 @@
 package com.selfknow.domain;
 
+import org.apache.ibatis.annotations.Param;
+
 public class User {
     String username;
     String password;
